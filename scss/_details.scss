@@ -1,0 +1,160 @@
+// Details Sections Starts 
+
+#details{
+    height: 400px;
+    .details_cnt{
+         background-color: $thirdColor;
+         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            @include md-device() {
+                font-size: 30px;
+            }
+
+            @include sm-device(){
+               font-size: 18px;
+            }
+        }
+        p{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            @include md-device() {
+                font-size: 12px;
+            }
+
+            @include sm-device(){
+               font-size: 8px;
+            }
+        }
+        
+         
+    }
+}
+
+
+// Details Section Ends
+
+//Product View starts
+#productView{
+    padding: 60px 0;
+
+    .productMainslider{
+        img{
+            width: 100%;
+        }
+    }
+    .subSlider{
+        margin-top: 15px;
+        .productMainslider{
+            padding: 0 10px;
+            transform: scale(0.8);
+            filter: grayscale(100%);
+            transition: 0.32s;
+
+            &.slick-center{
+                transform: scale(1);
+                filter: grayscale(0%);
+            }
+        }
+    }
+
+    .productView_text{
+       
+     
+        #cusRev{
+            font-size: 16px;
+            
+        font-style: normal;
+        font-weight: 400;
+        color: #444;
+        span{
+            color: $secondaryColor;
+            
+            
+            
+        }
+        }
+        #price{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            span{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                color: #444;
+                margin-left: 5px;
+            }
+        }
+        #description{
+            font-family: $secondaryFont;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+
+    .subProduct{
+
+        position: relative;
+        .arrows{
+            .leftArrow{
+                position:absolute;
+                top: 50%;
+                left: 0px;
+                background-color: black;
+                color: white;
+                width: 30px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 50px;
+                opacity: 0.5;
+                transform: translateY(-50%);
+            }
+            .rightArrow{
+                position:absolute;
+                top: 50%;
+                right: 0px;
+                background-color: black;
+                color: white;
+                width: 30px;
+                height: 50px;
+                font-size: 20px;
+                text-align: center;
+                line-height: 50px;
+                opacity: 0.5;
+                transform: translateY(-50%);
+    
+            }
+        }
+    }
+
+    form{
+        .input{
+            padding: 5px;
+            label{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                color: $primaryColor;
+                
+            }
+            select{
+                width: 80%;
+            }
+        }
+    }
+
+
+    
+}
+//Product View ends
